@@ -1,0 +1,20 @@
+<OGRVRTDataSource> 
+    <OGRVRTLayer name="power_towers"> 
+        <SrcDataSource>power_towers.csv</SrcDataSource> 
+        <GeometryType>wkbPoint</GeometryType> 
+        <LayerSRS>EPSG:4326</LayerSRS> 
+        <GeometryField encoding="WKT" field="the_geom"/> 
+    </OGRVRTLayer> 
+</OGRVRTDataSource>
+
+<!-- use the following if they are PointFromColumns -->
+<!--
+<OGRVRTDataSource>
+    <OGRVRTLayer name="power_towers">
+        <SrcDataSource>test.csv</SrcDataSource>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>WGS84</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="Longitude" y="Latitude"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
+-->
